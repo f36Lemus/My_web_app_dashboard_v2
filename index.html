@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>App Dashboard</title>
+	<link rel="stylesheet" href="css/normalize.css">	
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/css-toggle-switch/latest/toggle-switch.css" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+
+      <!-- start header -->
+      <header class="main-header">
+
+        <a class="site-logo" href="/">
+        <p>Your<span >App</span><span class="tm">&#8482;</span></p>
+        </a>
+
+        <ul class="avatar">  
+          <li>
+            <div class="notification">
+              <span class="green"></span>
+              <img class="bell" src="icons/icon-bell.svg" alt="bell">
+            </div>
+          </li>
+          <li>
+            <img class="profile" src="img/131.jpg" alt="John Hussein">          
+          </li>
+          <li class="name-profile">
+            <p>John Hussein</p>
+          </li>
+        </ul>
+      
+      </header>
+      <!-- end header -->
+      <div class="wrap clearfix"> 
+      <!-- start navigation -->
+        <div class="main-nav">
+          <ul>
+            <li><a href="/"><img class="i-dashboard" src="icons/icon-dashboard.svg" alt="dashboard"></a></li> 
+            <li><a href="/"><img class="i-members" src="icons/icon-members.svg" alt="members"></a></li> 
+            <li><a href="/"><img class="i-visits" src="icons/icon-visits.svg" alt="visits"></a></li> 
+            <li><a href="/"><img class="i-settings" src="icons/icon-settings.svg" alt="settings"></a></li>
+          </ul>  
+        </div>
+
+       <!-- end navigation -->
+       <div class="main-content">
+         <div class="form-search">
+            <form class="search" action="#" method="post">
+                  <input type="text" name="search" placeholder="Search">
+            </form>
+         </div>
+
+        
+            
+          <div class="line-chart">
+            <h1>Dashboard</h1>
+            <div id="alert-bar" class="alert"><p>Alert<p><span id="close">&#10006;</span></div>
+            <div class="traffic">
+              <canvas id="traffic-chart"></canvas>
+            </div>
+          </div>
+              
+         <div class="two-charts clearfix"> 
+            <div class="daily-traffic">
+              <canvas id="daily-t-chart"></canvas>
+            </div>
+            <div class="mobile">
+               <canvas id="mobile-u-chart"></canvas>
+            </div>
+        </div> 
+
+          <div class="social clearfix">
+            <h1>Social Stats</h1>
+
+            <div class="twitter icon-social">
+              <div class="social-icons clearfix">
+                  <div class="icon-bg">
+                    <img class="twitter-icon" src="icons/icon-twitter.svg" alt="twitter"> 
+                  </div>  
+                  <div class ="text-icons">
+                    <h2>Twitter</h2>
+                    <p>10,345</p>
+                  </div>
+              </div>
+            </div>
+
+          <div class="facebook icon-social clearfix"> 
+              <div class="social-icons clearfix">
+                <div class="icon-bg">
+                  <img class="facebook-icon" src="icons/icon-facebook.svg" alt="facebook"> 
+                </div>  
+                <div class ="text-icons">
+                  <h2>Facebook</h2>
+                  <p>8,739</p>
+                </div>
+              </div>  
+            </div>
+
+            <div class="google icon-social"> 
+              <div class="social-icons clearfix">
+                <div class="icon-bg">
+                   <img class="google-icon" src="icons/icon-google-plus.svg" alt="google plus"> 
+                </div>  
+                <div class ="text-icons">
+                  <h2>Google+</h2>
+                  <p>2,530</p>
+                </div>
+              </div>  
+            </div>
+          </div>
+          <div class="members-activity clearfix">
+            <div class="members">
+                 <h1>New members</h1>
+                 <div class="member clearfix">
+                   <img class="profile" src="img/129.jpg" alt="Oscar de la Renta">
+                   <div class="member-p">
+                     <p class="name-member">Oscar de la Renta</p>
+                     <p class="email-member"><a href="#">oscardelarenta@example.com</a></p><span class="date">10/15/16</span>
+                  </div>
+                 </div>
+
+                  <div class="member clearfix">
+                   <img class="profile" src="img/130.jpg" alt="John Ave">
+                   <div class="member-p">
+                     <p class="name-member">John Ave</p>
+                     <p class="email-member"><a href="#">john.ave@example.com</a></p><span class="date">08/15/16</span>
+                  </div>
+                 </div>
+
+                  <div class="member clearfix">
+                   <img class="profile" src="img/132.jpg" alt="Ana Hernandez">
+                   <div class="member-p">
+                     <p class="name-member">Ana Hernández</p>
+                     <p class="email-member"><a href="#">ahernandez@example.com</a></p><span class="date">02/20/16</span>
+                  </div>
+                 </div>
+
+                  <div class="member clearfix">
+                   <img class="profile" src="img/133.jpg" alt="Carlos Lopez">
+                   <div class="member-p">
+                     <p class="name-member">Carlos López</p>
+                     <p class="email-member"><a href="#">carlosl22@example.com</a></p><span class="date">08/15/16</span>
+                  </div>
+                 </div>
+
+            </div>
+
+
+
+            <div class="recent-activity clearfix">
+                  <h1>Recent Activity</h1>
+                 <div class="member clearfix">
+                   <img class="profile" src="img/129.jpg" alt="Oscar de la Renta">
+                   <div class="member-post">
+                     <p class="posted">Oscar commented he's so happy eating fruits and vegetables</p>
+                     <p class="time">1 day ago</p>
+                    </div><span class="sign">&GT;</span>
+                 </div>
+
+                  <div class="member clearfix">
+                   <img class="profile" src="img/130.jpg" alt="John Ave">
+                    <div class="member-post">
+                     <p class="posted">John Ave talked about life in the Mars planet</p>
+                     <p class="time">2 hours ago</p>
+                    </div><span class="sign">&GT;</span>
+                </div>
+
+                  <div class="member clearfix">
+                   <img class="profile" src="img/132.jpg" alt="Ana Hernandez">
+                    <div class="member-post">
+                     <p class="posted">Ana Hernandez commented on Facebook's Changes for 2017</p>
+                     <p class="time">10 hours ago</p>
+                    </div><span class="sign">&GT;</span>
+                 </div>
+
+                  <div class="member clearfix">
+                   <img class="profile" src="img/133.jpg" alt="Carlos Lopez">
+                   <div class="member-post">
+                     <p class="posted">Carlos Lopez like the last post about code in the real life</p>
+                     <p class="time">1 day ago</p>
+                    </div><span class="sign">&GT;</span>
+                 </div>
+
+            </div>
+          </div>
+
+            <div class="message-settings clearfix">
+               <div class="form-message">
+                 <h1>Message User</h1>
+                 <div id="alert-message"></div>
+                 <form id="message" class="message" action="#" method="post"> 
+                   <div>
+                      <input type="text" id="search-u" name="search-user" placeholder="Search for User" >
+                   </div>
+                   <div>
+                      <textarea id="message-u" name="message-user" placeholder="Message for User"></textarea>
+                   </div>
+                   <button type="submit" >Send</button>
+                 </form>
+               </div>
+                 
+              
+               <div class="settings">
+               <h1>Settings</h1> 
+               <form id="settings-form">
+               <fieldset>
+                 <div class="e-notifications clearfix">
+                 <p>Send Email Notifications</p>
+                  <div class="on-off">           
+                    <label class="switch-light switch-ios" onclick="">
+                      <input type="checkbox">
+                        <span>
+                          <span>Off</span>
+                          <span>On</span>
+                          <a></a>
+                        </span>
+                    </label>
+                  </div>
+                  </div>
+                  <div class="set-public">
+                    <p>Set Profile to Public</p>
+                    <div class="on-off">           
+                      <label class="switch-light switch-ios" onclick="">
+                      <input type="checkbox">
+                        <span>
+                          <span>Off</span>
+                          <span>On</span>
+                          <a></a>
+                        </span>
+                      </label>
+                  </div>
+                  </div>
+                </fieldset>
+                <fieldset>
+                  <div class="time-zone">
+                    <select id="time-z" name="time-zones">
+                      <option hidden disabled selected>Select Timezone</option>   
+                      <option>Pacific</option>
+                      <option>Mountain</option>
+                      <option>Central</option> 
+                      <option>Eastern</option>                   
+                   </select>               
+                  </div>
+                  <button class="save" type="submit" >Save</button>
+                  <button type="submit" id="cancel">Cancel</button>
+                </fieldset>
+
+                </form> 
+               </div>
+             </div>
+        </div><!-- end main-content -->
+
+      </div><!-- end wrap -->
+     
+
+   
+  </div><!-- end container -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
+
+</body>
+</html>

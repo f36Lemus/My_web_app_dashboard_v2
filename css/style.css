@@ -1,0 +1,945 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+@import url("http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
+
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.4;
+	color: #3a3a3a;
+	background: #d0cccc;
+
+
+}
+
+h1 {
+	margin: 0;
+	font-weight: 300;
+	text-transform: uppercase;
+	font-size: 1.5em;
+	margin: 10px 0;
+}
+
+ul,
+li {
+	margin: 0;
+	padding: 0;
+	outline-style: none;
+}
+
+p {
+	font-size: .95em;
+	color: #FFFFFF;
+}
+
+h2,
+h3,
+a {
+	color: #093a58;
+	text-decoration: none;
+}
+
+h2,
+h3 {
+	margin-top: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+/* ----- Header -----*/
+.main-header,
+.avatar,
+.main-nav {
+	display: flex;
+}
+
+.main-header {
+	width: 100%;
+	height: 70px;
+	background: #7874bf;
+	padding-top: 0.6em;
+	padding-bottom:  1.3em;
+	padding-right: 1em;
+	margin-right: 10px;
+}
+
+.avatar {
+	width: 70%;
+	height: 50px;
+	justify-content: flex-end;
+	margin-left: auto;
+	margin-right: 10px;
+	padding-top: 0.1em;
+	align-items: center;
+}
+
+.avatar p {
+
+	justify-content: flex-end;
+	margin-top: 12px;
+	font-weight: 300;
+	margin-left: 5px;
+	margin-right: 10px;
+	
+}	
+
+.avatar li {
+	margin-left: 4px;
+	display: inline-block;
+
+}
+
+.name-profile {
+	width: 120px;
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.avatar li:nth-child(2) {
+    border-left: 1px solid #4f4b72;
+}
+
+.site-logo {
+	margin-bottom: 20px;
+	display: block;
+	margin-right: 30px;
+}
+
+.site-logo p{
+	margin-left: 10px;
+	margin-top: 27px;
+	line-height: 0;
+	font-weight: 900;
+	font-size: 1.4em;
+}
+
+.site-logo span {
+	font-weight: 100;
+}
+
+.site-logo .tm {
+	font-size: 0.8em;
+}
+
+/* ---- Navigation ---- */
+.main-nav{
+	padding: 1em;
+	background: #4f4b72;
+}
+
+.main-nav ul {
+	width: 100%;
+}
+
+.main-nav li {
+	border-top: 1px solid #7874bf;
+	border-bottom: 1px solid #3c3c4a;
+}
+
+.main-nav li:nth-child(1) {
+	border-top: none;
+}
+
+.main-nav li:nth-child(4) {
+	border-bottom: none;
+}
+
+
+.main-nav a {
+	display: block;
+	text-align: center;
+	padding: 0.5em;
+}
+
+.main-nav img {
+	width: 40px;
+}
+
+/* ---- Search --------------*/
+
+
+.form-search {
+	width: 100%;
+}
+
+
+.search
+ {
+	text-align: center;
+	width: 100%;
+	padding: 1em 1em;
+	font-size: 1.1em;
+    background: #eae8e8;
+}
+
+.search input {
+	width: 97%;
+	padding: 0.5em;
+    background-image: url('../img/m_g.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    border-radius: 10px;
+    border: 1px solid #9a9a9a;
+
+}
+
+/* ---- Page Elements ---- */
+.notification {
+	position: relative;
+	width: 30px;
+	margin-top: 3px;
+}
+
+ .bell {
+ 	width: 22px;
+ 	margin-top: 15px;
+ 	margin-right: 5px;
+ 
+ }
+
+ .profile {
+ 	display: block;
+ 	width: 40px;
+ 	border-radius: 50%;
+ 	margin-top: 7px;
+ 	margin-left: 5px;
+ }
+
+ .green{
+ 	position: absolute;
+ 	display: block;
+ 	padding: 1px;
+ 	width: 7px;
+ 	height: 7px;
+ 	background: #8ede7f;
+ 	border-radius: 50px;
+ 	z-index: 100;
+ 	margin-top: 8px;
+    margin-left: 15px;
+ 	margin-bottom: -10px;
+ }
+
+
+/* ---- Layout Containers ---- */
+.main-content {
+	margin: 0 auto;
+	background: #ffffff;
+}
+
+
+
+.alert {
+	font-size: 1.2em;
+	width: 80%;
+	background: #7774bf;
+	margin: 5px auto;
+	padding: 0.8em 1em;
+	border-radius: 5px;
+	color: white;
+	position: relative;
+}
+
+#close {
+	display: block;
+	position: absolute;
+	top: 5px;
+	right: 15px;
+	z-index: 1000;
+}
+
+.alert p {
+	margin: 0;
+}
+
+/* ------- CHARTS  -----------------*/
+.line-chart {
+	display: block;
+	text-align: center;
+	padding-bottom: 15px;
+	margin: 5px;
+}
+
+
+
+.traffic, 
+.daily-traffic {
+	display: block;
+	width: 95%;
+	margin-top: 15px;
+	margin-left: 10px;
+	margin-right: 10px;
+	text-align: center;
+	border-bottom: 1px solid #d2d2d2;
+	padding-bottom: 15px;
+}
+
+.mobile {
+	display: block;
+	width: 77%;
+	text-align: center;
+	margin: 10px auto;
+	border-bottom: 1px solid #d2d2d2;
+}
+
+/* ------------ SOCIAL STATS -----------*/
+
+.social {
+	border-bottom: 1px solid #d2d2d2;
+	width: 100%;
+	text-align: center;
+
+}
+
+
+.social-icons {
+	width: 90%;
+	height: 80px;
+	border: 1px solid #d1d1d1;
+	padding: 10px;
+	margin: 10px auto;
+	border-radius: 10px;
+	text-align: center;
+	background: #fbfbfb;
+}
+
+.icon-bg {
+	position: relative;
+	width: 60px;
+	height: 60px;
+	background: #7774bf;
+	margin-left: 2%;
+	border-radius: 50%;
+	float: left;
+}
+
+img.twitter-icon {
+	position: absolute;
+	width: 35px;
+	top: 28%;
+	left: 23%;
+}
+
+.text-icons {
+	margin-left: 30%;
+}
+.text-icons h2 {
+	margin-top: 10px;
+	float: left;
+	color: #7874bf;
+
+}
+
+
+.text-icons p {
+	color: #666;
+	margin-top: 0;
+	font-size: 1.5em;
+	display: inline-block;
+	margin-top: 10px;
+}
+
+img.facebook-icon {
+	position: absolute;
+	width: 17px;
+	top: 20%;
+	left: 35%;
+}
+
+img.google-icon {
+	position: absolute;
+	width: 35px;
+	top: 25%;
+	left: 25%;
+}
+
+.clearfix::after{
+    content: " ";
+    display: table;
+    clear: both;
+ }
+
+/* ------------ MEMBERS -----------*/
+
+.members,
+.recent-activity {
+	width: 90%;
+	margin: 10px auto;
+	padding: 0 5px;
+}
+
+.name-member {
+	color: #666;
+	margin: 0;
+	line-height: 0;
+}
+
+.email-member {
+	line-height: 0;
+}
+
+.email-member a{
+	color: #837fc4;
+	display: inline-block;
+	margin: 5px auto;
+}
+
+.member {
+	margin: 10px 15px 10px 15px;
+	font-weight: 300;
+	border-bottom: 1px solid #d2d2d2;
+	padding-bottom: 5px;
+
+}
+
+.member-p {
+	text-align: center;
+	width: 60%;
+	float: left;
+	padding: 5px 25px;
+}
+
+.member img {
+	width: 40px;
+	display: inline-block;
+	float: left;
+}
+
+.date {
+	display: block;
+	line-height: 0;
+	color: #666;
+	margin-top: 3px;
+	padding: 5px 10px;
+	font-size: 0.8em;
+}
+
+/* ------------ RECENT ACIVITY -----------*/
+
+
+.recent-activity img{
+	width: 40px;
+	display: inline-block;
+	float: left;
+	margin-right: 10px;
+}
+
+
+.posted,
+.time {
+	color: #666;
+	font-weight: 300;
+	margin-left: 10px;
+	line-height: 1.5;
+	margin-bottom: 5px;
+}
+
+.member-post {
+	text-align: left;
+	margin-left: 15%;
+	margin-right: 10PX;
+	margin-bottom: 5px;
+	padding-top: 1px;
+}
+
+.sign {
+	display: block;
+	font-weight: 700;
+	font-size: 2.7em;
+	line-height: 0.3;
+	margin: 15px;
+    text-align: center;
+	color: #7875bf;
+}
+
+.time {
+	margin-top: 5px;
+	line-height: 1;
+}
+
+/* ------------ FORM - MESSAGE -----------*/
+
+
+.form-message {
+	width: 100%;
+	padding: 10px;
+	text-align: center;
+	border-bottom: 1px solid #d2d2d2;
+}	
+
+input[name="search-user"],
+textarea,
+select  {
+	border-radius: 6px;
+    border: 1px solid #d1d1d1;
+    margin: 10px;
+    padding: 10px;
+    width: 90%;
+    background: #fbfbfb;
+    height: auto;
+}
+
+
+::-webkit-input-placeholder {
+   color: #d0cece;
+   text-align: left;
+   font-size: 0.9em;
+   font-weight: 300;   
+}
+
+button {
+	padding: 17px 20px;
+	background: #7774bf;
+	width: 90%;
+	margin-bottom: 5px;
+	color: #FFF;
+	text-transform: uppercase;
+	border-radius: 5px;
+}
+
+/* ------------ SETTINGS -----------*/
+
+fieldset {
+	border: none;
+	padding: 0;
+	margin: 0;
+}
+
+
+.settings {
+	width: 85%;
+	padding: 15px 20px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.set-public,
+.e-notifications {
+	text-align: left;
+}
+
+.settings h1 {
+	text-align: center;
+}
+
+.settings p {
+	color: #666;
+	display: inline;
+	text-align: left;
+}
+
+.e-notifications {
+	margin: 30px 0;
+}
+
+.on-off {
+	width: 25%;
+	float: right;
+}
+
+
+
+.switch-ios.switch-light > span {
+	background: #7774bf;
+	border: 2px solid #cbcbce;
+	
+}
+
+.switch-ios.switch-light > span span {
+	color: white;
+}
+
+.time-zone {
+	text-align: center;
+	margin: 20px auto;
+	max-width: 90%;
+}
+
+button#cancel {
+	background: #b2b2b2;
+	margin-top: 10px;
+}
+
+
+select#time-z {
+
+   background-image:url(../img/down.png);
+   background-repeat:no-repeat;
+   background-position: right;
+   height: 65px;
+   color: #969292;
+   text-align: left;
+   font-size: 1em;
+   font-weight: 300; 
+   padding: 5px 15px; 
+   line-height: 1;
+   -webkit-appearance:none;
+}
+
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+/*************** TABLET ****************/
+
+@media screen and (min-width: 769px) { 
+
+	html, 
+	body {
+		height: 100%;
+		overflow-y: auto;
+		
+	}	
+	.container {
+		/*height: 100%;*/
+		width: 100%;
+		background: #4f4b72;
+		
+	}	
+	.wrap {
+		height: 100%;
+		width: 100%;
+		overflow: auto;		
+	}
+
+	.main-content {
+	    width: calc(100% - 150px);
+	    background: #ffffff;
+	    height: 100%;
+	    float: right;
+
+	    
+	}
+
+	.main-nav {
+		
+		width: 150px;
+	    float: left;
+	    /*height: 100%;*/
+		display: block;
+	}
+
+	.main-nav li {
+		border: none;
+	}
+
+	.site-logo {
+		margin-left: 20px;
+	}
+
+	.form-message {
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	.settings {
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	.clearfix::after{
+    content: " ";
+    display: table;
+    clear: both;
+ }
+}
+
+/*************** DESKTOP ****************/
+
+ @media screen and (min-width: 1025px) { 
+
+ 	.container {
+ 		max-width: 1196px;
+ 		margin: 0 auto;
+
+ 	}
+
+ 	.avatar li {
+ 		margin-left: 15px;
+ 	}
+
+ 	.profile {
+ 		margin-left: 15px;
+ 	}
+
+ 	.main-content { 
+ 		width: calc(100% - 100px);
+ 	}
+
+ 	.main-nav {
+ 		width: 100px;
+ 		padding-left: 0;
+ 		padding-right: 0;
+ 	}
+
+ 	.main-nav li img {
+ 		opacity: 0.5;
+ 		width: 100%;
+ 		padding: 10px 28px;
+ 		border: 4px solid transparent;
+ 	}
+
+ 	.main-nav li a {
+ 		padding: 0;
+ 	}
+
+ 	.main-nav li img:hover {
+ 		opacity: 1;
+ 		border-left: 4px solid #8ede7e;
+
+ 	}
+
+ 	.form-search {
+ 		text-align: right;
+ 	}
+
+ 	.search {
+ 		text-align: right;
+ 		padding-top: 0.6em;
+ 		padding-bottom: 0.6em;
+ 	}
+
+ 	.search input{
+ 		width: 30%;
+ 	}
+
+ 	#alert-bar {
+ 		padding-top: 0.5em;
+ 		padding-bottom: 0.5em;
+ 		width: 97%;
+ 	}
+
+ 	.line-chart {
+ 		margin-bottom: 0;
+ 		padding-bottom: 0;
+ 	}
+
+ 	.line-chart h1 {
+		text-align: left;
+		margin-left: -4px;
+		margin-top: -65px;
+		padding: 25px 20px 25px 40px;
+		background: #FFFFFF;width: 180px;
+	}
+
+ 	.two-charts {
+ 		margin: 0;
+
+ 		padding-right: 10px;
+ 		padding-left: 10px;
+ 		border-bottom: 1px solid #d2d2d2;
+ 	}
+
+ 	.daily-traffic {
+ 		float: left;
+ 		width: 63%;
+ 		margin: 0;
+ 		padding: 10px 10px;
+ 		border-bottom: none;
+ 		border-right:1px solid #d2d2d2;
+ 	}
+  	
+  	.mobile {
+  		float: right;
+  		width: 32%;
+  		margin: 0;
+  		padding: 10px 20px 10px 0;
+  		border-bottom: none;
+  	}
+  	.traffic {
+  		width: 100%;
+  		margin-left: 0;
+  		margin-right: 0;
+  		padding: 10px 15px;
+  	}
+
+  	.social {
+  		width: 100%;
+  		padding-top: 10px;
+  		padding-bottom: 35px;
+  		margin-top: 15px;
+  		margin-bottom: 0;
+  		margin-left: auto;
+  		margin-right: auto;
+  	}
+
+  	.social-icons {
+  		padding-top: 10px;
+  		padding-bottom: 10px;
+  		height: 110px;
+  	}
+
+  	.social h1 {
+  		text-align: left;
+  		margin-left: 20px;
+  	}
+
+  	.icon-social { 
+  		float: left;
+  		width: 33%;
+
+  	 }
+
+  	 .text-icons {
+  	 	text-align: left;
+  	 }
+
+  	 .text-icons p {
+  	 	font-size: 2.7em;
+  	 	margin-top: 0;
+  	 	font-weight: 300;
+  	 }
+
+  	 .icon-bg {
+  	 	margin-top: 15px;
+  	 	width: 65px;
+  	 	height: 65px;
+  	 }
+
+  	 .text-icons h2 {
+  	 	float: none;
+  	 	margin-bottom: 0;
+  	 	margin-top: 0;
+  	 }
+
+  	 h1 {
+  	 	font-size: 1em;
+  	 }
+
+  	 .members-activity {
+  	 	width: 100%;
+  	 	border-bottom: 1px solid #d2d2d2;
+  	 }
+
+  	 .members {
+  	 	float: left;
+  	 	width: 50%;
+  	 	margin-top: 0;
+  	 	padding-top: 10px;
+  	 	margin-bottom: 0;
+  	 	border-right: 1px solid #d2d2d2;
+  	 }
+
+  	 .members div:last-of-type,
+  	 .recent-activity div:last-of-type {
+  	 	border-bottom: none;
+  	 }
+
+  	 .member {
+  	 	margin-left: 5px;
+  	 }
+
+  	 .member-p {
+  	 	padding-top: 18px;
+  	 	padding-right: 10px;
+  	 	padding-left: 0;
+  	 	width: 85%;
+  	 	float: right;
+  	 	text-align: left;
+  	 }
+
+  	 .profile {
+  	 	display: block;
+  	 }
+
+  	 .recent-activity {
+  	 	width: 50%;
+  	 	float: right;
+  	 	margin-top: 0;
+  	 	margin-bottom: 0;
+  	 	padding-top: 10px;
+  	 }
+
+  	 .email-member {
+  	 	
+  	 	width: 80%;
+  	 }
+  	 .date {
+  	 	text-align: right;
+  	 	margin-left: 200px;
+  	 	float: right;
+  	 	margin-top: -30px;
+  	 }
+  	 .member-post {
+  	 	margin-left: 13%;
+  	 	margin-top: -42px;
+  	 	float: left;
+  	 	width: 80%;
+  	 }
+  	 .posted {
+  	 	margin-top: 5px;
+  	 }
+  	 .sign {
+  	 	font-weight: 300;
+  	 	width: 20%;
+  	 	float: right;
+  	 	margin: 0;
+  	 	text-align: right;
+  	 	margin-top: -38px;
+  	 	margin-bottom: 15px;
+  	 }
+
+  	 .members h1,
+  	 .recent-activity h1,
+  	 .form-message h1,
+  	 .settings h1 {
+  	 	margin-left: 25px;
+  	 	text-align: left;
+  	 }
+
+  	 .message-settings {
+  	 	width: 100%;
+  	 }
+  	 .form-message {
+  	 	float: left;
+  	 	width: 50%;
+  	 	border-right: 1px solid #d2d2d2;
+  	 	border-bottom: none;
+  	 }
+  	 .settings {
+  	 	float: right;
+  	 	width: 50%;  	 
+  	 }
+  	 #message-u {
+  	 	height: 180px;
+  	 }
+  	 .e-notifications,
+  	 .set-public  {
+  	 	width: 60%;
+  	 }
+  	 button.save {
+  	 	width: 40%;
+  	 }
+  	 button#cancel {
+  	 	width: 40%;
+  	 	margin-left: 15px;
+  	 }
+  	 #time-z {
+  	 	margin-left: 0;
+  	 	margin-right: 0;
+  	 }
+
+}
