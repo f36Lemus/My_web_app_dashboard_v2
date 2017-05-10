@@ -62,7 +62,7 @@ var myChart = new Chart(ctx, {
     labels: ["s", "M", "T", "W", "T", "F", "S"],
     datasets: [{
       label: 'traffic',
-      data: [60, 90, 200, 85, 165, 110, 220],
+      data: [70, 90, 200, 85, 165, 110, 220],
       backgroundColor: "rgba(119,116,191,1)"
     }
 
